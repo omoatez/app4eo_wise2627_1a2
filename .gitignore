@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.idea/
+*.iml
+.DS_Store
+untracked-files/
+outputs/
+*.ckpt
+dist/
+tests
+
