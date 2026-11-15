@@ -4,5 +4,6 @@ if __name__ == "__main__":
     main([
         "--dataset", "tinyben",
         "--arch-name", "ResNet18",
+        "--dropout", "0.5",
         "--accelerator", "gpu",
     ])
