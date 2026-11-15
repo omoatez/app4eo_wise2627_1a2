@@ -5,5 +5,6 @@ if __name__ == "__main__":
         "--dataset", "eurosat",
         "--arch-name", "ViT-Tiny",
         "--pretrained",
+        "--dropout", "0.5",
         "--accelerator", "gpu",
     ])
