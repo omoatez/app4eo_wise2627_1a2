@@ -1,15 +1,11 @@
-"""GPU Runner ZIP entry point. Edit these arguments to choose the experiment."""
+
+"""GPU Runner: EuroSAT / ResNet18 / from scratch."""
 
 from experiments import main
 
 if __name__ == "__main__":
-    main(
-        [
-            "--dataset",
-            "eurosat",
-            "--arch-name",
-            "ResNet-6",
-            "--accelerator",
-            "gpu",
-        ]
-    )
+    main([
+        "--dataset", "eurosat",
+        "--arch-name", "ResNet18",
+        "--accelerator", "gpu",
+    ])
