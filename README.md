@@ -81,3 +81,25 @@ Real benchmark runs and the report are still pending. Topics A/B are not
 implemented. The Caltech course starter was absent: its fallback uses RGB images,
 excludes `BACKGROUND_Google`, and assumes a 70/10/20 split that must be reconciled
 with the course starter. Check formatting with `ruff check .` and `ruff format --check .`.
+
+to create the zip for the runner, run the following:
+
+```sh
+mkdir -p dist
+
+rm -f dist/app4eo-milestone1.zip
+
+zip -r dist/app4eo-milestone1.zip \
+run_gpu.py \
+experiments.py \
+base.py \
+models.py \
+features.py \
+analysis.py \
+pyproject.toml \
+README.md \
+data/__init__.py \
+data/datamodules.py \
+data/datasets.py \
+data/transform.py
+```
