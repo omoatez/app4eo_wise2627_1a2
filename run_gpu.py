@@ -7,6 +7,6 @@ if __name__ == "__main__":
     main([
         "--dataset", "eurosat",
         "--arch-name", "ResNet18",
-        "--pretrained",
+        "--dropout", "0.5",
         "--accelerator", "gpu",
     ])
