@@ -2,8 +2,8 @@ from experiments import main
 
 if __name__ == "__main__":
     main([
-        "--dataset", "eurosat",
+        "--dataset", "tinyben",
         "--arch-name", "ResNet18",
-        "--augmentation", "grayscale",
+        "--augmentation", "flip",
         "--accelerator", "gpu",
     ])
